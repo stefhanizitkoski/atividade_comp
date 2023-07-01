@@ -8,22 +8,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
       ),
       home: const ContentPage(),
     );
@@ -128,7 +118,7 @@ _profile() {
         color: secondaryColor,
         borderRadius: BorderRadius.circular(20),
       ),
-      child: const Icon(
+      child:  Icon(
         MdiIcons.accountOutline,
         color: Colors.white,
       ),
@@ -142,13 +132,13 @@ _options() {
     children: [
       Container(
           margin: const EdgeInsets.symmetric(horizontal: 10),
-          child: const Icon(MdiIcons.eyeOutline, color: Colors.white)),
+          child: Icon(MdiIcons.eyeOutline, color: Colors.white)),
       Container(
           margin: const EdgeInsets.symmetric(horizontal: 10),
-          child: const Icon(MdiIcons.helpCircleOutline, color: Colors.white)),
+          child: Icon(MdiIcons.helpCircleOutline, color: Colors.white)),
       Container(
           margin: const EdgeInsets.symmetric(horizontal: 10),
-          child: const Icon(MdiIcons.emailPlus, color: Colors.white)),
+          child: Icon(MdiIcons.emailPlus, color: Colors.white)),
     ],
   );
 }
@@ -172,7 +162,7 @@ _account() {
 _accountText() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: const [
+    children:  [
       Text('Conta',
           style: TextStyle(
             fontSize: 20,
@@ -188,7 +178,7 @@ _accountMoney() {
     margin: const EdgeInsets.only(
       top: 20,
     ),
-    child: const Text('R\$ 1.000,00',
+    child: const Text('R\$ 2.000,00',
         style: TextStyle(
           fontSize: 23,
           fontWeight: FontWeight.bold,
@@ -267,7 +257,7 @@ _cards() {
       ),
       child: Row(
         children: [
-          const Icon(MdiIcons.creditCard),
+           Icon(MdiIcons.creditCard),
           Container(
               margin: const EdgeInsets.only(left: 10),
               child: const Text('Meus Cartões',
@@ -332,7 +322,7 @@ _cardsInfo() {
                         style: const TextStyle(color: Colors.black),
                         children: <TextSpan>[
                           TextSpan(
-                              text: 'R\$ 25.000,00',
+                              text: 'R\$ 10.000,00',
                               style: TextStyle(color: backgroundColor)),
                           const TextSpan(
                             text: ' Disponíveis para empréstimo.',
@@ -400,7 +390,7 @@ _cardCredit() {
 _cardCreditIcon() {
   return Container(
       margin: const EdgeInsets.only(bottom: 10),
-      child: const Icon(MdiIcons.creditCard));
+      child: Icon(MdiIcons.creditCard));
 }
 
 _cardCredText() {
@@ -408,7 +398,7 @@ _cardCredText() {
     margin: const EdgeInsets.only(bottom: 10),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
+      children: [
         Text('Cartão de Crédito',
             style: TextStyle(
               fontWeight: FontWeight.bold,
@@ -482,7 +472,7 @@ _cardEmp() {
 }
 
 _cardEmpIcon() {
-  return const Icon(MdiIcons.cash, size: 30);
+  return  Icon(MdiIcons.cash, size: 30);
 }
 
 _cardEmpTitle() {
@@ -490,7 +480,7 @@ _cardEmpTitle() {
     margin: const EdgeInsets.only(top: 10),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
+      children: [
         Text('Emprestimos',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         Icon(MdiIcons.chevronRight),
@@ -545,7 +535,7 @@ _cardSeg() {
 }
 
 _cardSegIcon() {
-  return const Icon(MdiIcons.umbrella);
+  return Icon(MdiIcons.umbrella);
 }
 
 _cardSegTitle() {
@@ -572,7 +562,7 @@ _cardSegButton() {
       color: const Color.fromRGBO(240, 241, 245, 1),
     ),
     child: ListTile(
-      leading: const Icon(
+      leading: Icon(
         MdiIcons.heartOutline,
         color: Colors.black,
       ),
@@ -605,7 +595,7 @@ _cardInvest() {
 }
 
 _cardInvestIcon() {
-  return const Icon(
+  return Icon(
     MdiIcons.chartBar,
   );
 }
@@ -615,7 +605,7 @@ _cardInvestTitle() {
     margin: const EdgeInsets.only(top: 10),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
+      children: [
         Text('Investimentos',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         Icon(MdiIcons.chevronRight),
@@ -647,7 +637,7 @@ _cardShopping() {
 }
 
 _cardShopIcon() {
-  return const Icon(MdiIcons.shopping);
+  return Icon(MdiIcons.shopping);
 }
 
 _cardShopTitle() {
@@ -655,7 +645,7 @@ _cardShopTitle() {
       margin: const EdgeInsets.only(top: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
+        children: [
           Text('Shopping',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           Icon(MdiIcons.chevronRight),
@@ -742,7 +732,7 @@ _cardSlide() {
         Container(
           margin: const EdgeInsets.only(left: 20, bottom: 20),
           child: const Text(
-              'Sua liberdade financeira começa com você escolhend...',
+              'Sua liberdade financeira começa com você escolhendo...',
               style: TextStyle(
                 color: Colors.grey,
               )),
